@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		91CA9A4B26793A620051861C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CA9A4926793A620051861C /* Main.storyboard */; };
 		91CA9A4D26793A630051861C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CA9A4C26793A630051861C /* Assets.xcassets */; };
 		91CA9A5026793A630051861C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CA9A4E26793A630051861C /* LaunchScreen.storyboard */; };
+		91CA9A5826795A6B0051861C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A5726795A6B0051861C /* PlayViewController.swift */; };
+		91CA9A5A26795AC40051861C /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A5926795AC40051861C /* RulesViewController.swift */; };
+		91CA9A5E26796FA20051861C /* WaitRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A5D26796FA20051861C /* WaitRoomViewController.swift */; };
+		91CA9A6126799D4E0051861C /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 91CA9A6026799D4E0051861C /* SocketIO */; };
+		91CA9A6326799DCD0051861C /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A6226799DCD0051861C /* SocketIOManager.swift */; };
+		91CA9A66267A51590051861C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A65267A51590051861C /* User.swift */; };
+		91CA9A68267A59780051861C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A67267A59780051861C /* DrawViewController.swift */; };
+		91CA9A6A267A5A7E0051861C /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A69267A5A7E0051861C /* Canvas.swift */; };
+		91CA9A6E267A5B5C0051861C /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A6D267A5B5C0051861C /* Line.swift */; };
+		91CA9A70267A619C0051861C /* MousePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CA9A6F267A619C0051861C /* MousePoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,15 @@
 		91CA9A4C26793A630051861C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91CA9A4F26793A630051861C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91CA9A5126793A630051861C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91CA9A5726795A6B0051861C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		91CA9A5926795AC40051861C /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		91CA9A5D26796FA20051861C /* WaitRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitRoomViewController.swift; sourceTree = "<group>"; };
+		91CA9A6226799DCD0051861C /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		91CA9A65267A51590051861C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		91CA9A67267A59780051861C /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		91CA9A69267A5A7E0051861C /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		91CA9A6D267A5B5C0051861C /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		91CA9A6F267A619C0051861C /* MousePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CA9A6126799D4E0051861C /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +76,15 @@
 		91CA9A4226793A620051861C /* WhatAreYouDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				91CA9A6C267A5B460051861C /* Models */,
 				91CA9A4326793A620051861C /* AppDelegate.swift */,
+				91CA9A64267A513A0051861C /* Object Classes */,
+				91CA9A6B267A5A8F0051861C /* Views */,
+				91CA9A67267A59780051861C /* DrawViewController.swift */,
+				91CA9A6226799DCD0051861C /* SocketIOManager.swift */,
+				91CA9A5926795AC40051861C /* RulesViewController.swift */,
+				91CA9A5D26796FA20051861C /* WaitRoomViewController.swift */,
+				91CA9A5726795A6B0051861C /* PlayViewController.swift */,
 				91CA9A4526793A620051861C /* SceneDelegate.swift */,
 				91CA9A4726793A620051861C /* ViewController.swift */,
 				91CA9A4926793A620051861C /* Main.storyboard */,
@@ -65,6 +93,31 @@
 				91CA9A5126793A630051861C /* Info.plist */,
 			);
 			path = WhatAreYouDrawing;
+			sourceTree = "<group>";
+		};
+		91CA9A64267A513A0051861C /* Object Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91CA9A65267A51590051861C /* User.swift */,
+				91CA9A6F267A619C0051861C /* MousePoint.swift */,
+			);
+			path = "Object Classes";
+			sourceTree = "<group>";
+		};
+		91CA9A6B267A5A8F0051861C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91CA9A69267A5A7E0051861C /* Canvas.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91CA9A6C267A5B460051861C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91CA9A6D267A5B5C0051861C /* Line.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = WhatAreYouDrawing;
+			packageProductDependencies = (
+				91CA9A6026799D4E0051861C /* SocketIO */,
+			);
 			productName = WhatAreYouDrawing;
 			productReference = 91CA9A4026793A620051861C /* WhatAreYouDrawing.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 91CA9A3726793A620051861C;
+			packageReferences = (
+				91CA9A5F26799D4E0051861C /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = 91CA9A4126793A620051861C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CA9A5A26795AC40051861C /* RulesViewController.swift in Sources */,
+				91CA9A5826795A6B0051861C /* PlayViewController.swift in Sources */,
+				91CA9A70267A619C0051861C /* MousePoint.swift in Sources */,
 				91CA9A4826793A620051861C /* ViewController.swift in Sources */,
+				91CA9A6A267A5A7E0051861C /* Canvas.swift in Sources */,
+				91CA9A68267A59780051861C /* DrawViewController.swift in Sources */,
+				91CA9A6326799DCD0051861C /* SocketIOManager.swift in Sources */,
+				91CA9A66267A51590051861C /* User.swift in Sources */,
 				91CA9A4426793A620051861C /* AppDelegate.swift in Sources */,
+				91CA9A5E26796FA20051861C /* WaitRoomViewController.swift in Sources */,
+				91CA9A6E267A5B5C0051861C /* Line.swift in Sources */,
 				91CA9A4626793A620051861C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91CA9A5F26799D4E0051861C /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 16.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91CA9A6026799D4E0051861C /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91CA9A5F26799D4E0051861C /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91CA9A3826793A620051861C /* Project object */;
 }
